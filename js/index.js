@@ -63,19 +63,19 @@ facilities.options.forEach(card => {
     let facilitiesCard = document.createElement("article");
     facilitiesCard.classList.add("facilities__card");
 
-    let facilitiesImg = document.createElement("img");
-    facilitiesImg.classList.add("facilities__card__img");
-    facilitiesImg.setAttribute("src", card.icon);
+    let facilitiesCardImg = document.createElement("img");
+    facilitiesCardImg.classList.add("facilities__card__img");
+    facilitiesCardImg.setAttribute("src", card.icon);
 
-    let facilitiesHeadline = document.createElement("h3");
-    facilitiesHeadline.classList.add("facilities__card__headline");
-    facilitiesHeadline.textContent = card.headline;
+    let facilitiesCardHeadline = document.createElement("h3");
+    facilitiesCardHeadline.classList.add("facilities__card__headline");
+    facilitiesCardHeadline.textContent = card.headline;
 
-    let facilitiesTxt = document.createElement("p");
-    facilitiesTxt.classList.add("facilities__card__txt");
-    facilitiesTxt.textContent = card.text;
+    let facilitiesCardTxt = document.createElement("p");
+    facilitiesCardTxt.classList.add("facilities__card__txt");
+    facilitiesCardTxt.textContent = card.text;
 
-    facilitiesCard.append(facilitiesImg, facilitiesHeadline, facilitiesTxt);
+    facilitiesCard.append(facilitiesCardImg, facilitiesCardHeadline, facilitiesCardTxt);
     facilitiesGrid.append(facilitiesCard);
 });
 
@@ -83,6 +83,37 @@ facilitiesSection.append(facilitiesHeadline, facilitiesGrid);
 
 
 // ----- SITES ----- //
+
+let sitesHeadline = document.createElement("h2");
+sitesHeadline.textContent = sites.headline;
+
+let sitesTxt = document.createElement("p");
+sitesTxt.textContent = sites.text;
+
+let sitesGrid = document.createElement("div");
+sitesGrid.classList.add("sites__grid");
+
+sites.places.forEach(card => {
+    let sitesCard = document.createElement("article");
+    sitesCard.classList.add("sites__card");
+
+    let sitesCardImg = document.createElement("img");
+    sitesCardImg.classList.add("sites__card__img");
+    sitesCardImg.setAttribute("src", card.img);
+
+    let sitesCardHeadline = document.createElement("h3");
+    sitesCardHeadline.classList.add("sites__card__headline");
+    sitesCardHeadline.textContent = card.name;
+
+    let sitesCardTxt = document.createElement("p");
+    sitesCardTxt.classList.add("sites__card__txt");
+    sitesCardTxt.textContent = card.city;
+
+    sitesCard.append(sitesCardImg, sitesCardHeadline, sitesCardTxt);
+    sitesGrid.append(sitesCard);
+});
+
+sitesSection.append(sitesHeadline, sitesTxt, sitesGrid);
 
 
 // ----- ADVANTAGES ----- //
