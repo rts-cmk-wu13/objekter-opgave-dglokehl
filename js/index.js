@@ -9,8 +9,13 @@ const footerSection = document.querySelector(".footer");
 
 
 // ----- HERO ----- //
+
 let heroImg = document.createElement("img");
+heroImg.setAttribute("src", hero.image);
 heroImg.classList.add("hero__img");
+
+let heroTxtContainer = document.createElement("div");
+heroTxtContainer.classList.add("hero__textbox")
 
 let heroHeadline = document.createElement("h1");
 heroHeadline.classList.add("hero__headline");
@@ -20,7 +25,12 @@ let heroTxt = document.createElement("p");
 heroTxt.classList.add("hero__txt");
 heroTxt.textContent = hero.copy;
 
-heroSection.append(heroImg, heroHeadline, heroTxt);
+let heroBtn = document.createElement("button");
+heroBtn.classList.add("hero__button");
+heroBtn.textContent = "Explore";
+
+heroTxtContainer.append(heroHeadline, heroTxt, heroBtn);
+heroSection.append(heroImg, heroTxtContainer);
 
 
 
