@@ -23,6 +23,7 @@ heroTxt.textContent = hero.copy;
 heroSection.append(heroImg, heroHeadline, heroTxt);
 
 
+
 // ----- SERVICES ----- //
 
 services.forEach(card => {
@@ -82,6 +83,7 @@ facilities.options.forEach(card => {
 facilitiesSection.append(facilitiesHeadline, facilitiesGrid);
 
 
+
 // ----- SITES ----- //
 
 let sitesHeadline = document.createElement("h2");
@@ -116,7 +118,37 @@ sites.places.forEach(card => {
 sitesSection.append(sitesHeadline, sitesTxt, sitesGrid);
 
 
+
 // ----- ADVANTAGES ----- //
+
+let advantagesHeadline = document.createElement("h2");
+advantagesHeadline.textContent = "Our Advantages";
+
+let advantagesGrid = document.createElement("div");
+advantagesGrid.classList.add("advantages__grid");
+
+advantages.forEach(card => {
+    let advantagesCard = document.createElement("article");
+    advantagesCard.classList.add("advantages__card");
+
+    let advantagesCardImg = document.createElement("img");
+    advantagesCardImg.classList.add("advantages__card__img");
+    advantagesCardImg.setAttribute("src", card.icon);
+
+    let advantagesCardHeadline = document.createElement("h3");
+    advantagesCardHeadline.classList.add("advantages__card__headline");
+    advantagesCardHeadline.textContent = card.headline;
+
+    let advantagesCardTxt = document.createElement("p");
+    advantagesCardTxt.classList.add("advantages__card__txt");
+    advantagesCardTxt.textContent = card.text;
+
+    advantagesCard.append(advantagesCardImg, advantagesCardHeadline, advantagesCardTxt);
+    advantagesGrid.append(advantagesCard);
+});
+
+advantagesSection.append(advantagesHeadline, advantagesGrid);
+
 
 
 // ----- FOOTER ----- //
