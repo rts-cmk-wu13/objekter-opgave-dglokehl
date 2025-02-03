@@ -54,6 +54,7 @@ services.forEach(card => {
 
     let servicesCardLink = document.createElement("a");
     servicesCardLink.classList.add("services__card__link");
+    servicesCardLink.setAttribute("href", "")
     servicesCardLink.textContent = card.linktext;
 
     servicesCard.append(servicesCardImg, servicesCardHeadline, servicesCardTxt, servicesCardLink);
