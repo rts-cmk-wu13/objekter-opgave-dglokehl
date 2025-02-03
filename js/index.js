@@ -53,7 +53,7 @@ services.forEach(card => {
     servicesCardTxt.textContent = card.text;
 
     let servicesCardLink = document.createElement("a");
-    servicesCardLink.classList.add("services__card__link");
+    servicesCardLink.classList.add("services__card__link", "link");
     servicesCardLink.setAttribute("href", "")
     servicesCardLink.textContent = card.linktext;
 
@@ -66,6 +66,7 @@ services.forEach(card => {
 // ----- FACILITIES ----- //
 
 let facilitiesHeadline = document.createElement("h2");
+facilitiesHeadline.classList.add("facilities__headline");
 facilitiesHeadline.textContent = facilities.headline;
 
 let facilitiesGrid = document.createElement("div");
@@ -87,7 +88,12 @@ facilities.options.forEach(card => {
     facilitiesCardTxt.classList.add("facilities__card__txt");
     facilitiesCardTxt.textContent = card.text;
 
-    facilitiesCard.append(facilitiesCardImg, facilitiesCardHeadline, facilitiesCardTxt);
+    let facilitiesCardLink = document.createElement("a");
+    facilitiesCardLink.setAttribute("href", "")
+    facilitiesCardLink.classList.add("facilities__card__link", "link");
+    facilitiesCardLink.textContent = "Show me more";
+
+    facilitiesCard.append(facilitiesCardImg, facilitiesCardHeadline, facilitiesCardTxt, facilitiesCardLink);
     facilitiesGrid.append(facilitiesCard);
 });
 

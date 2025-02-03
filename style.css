@@ -13,7 +13,9 @@ body {
 
 a {
     text-decoration: none;
-    color: #000;
+}
+a:hover {
+    text-decoration: underline;
 }
 
 .wrapper {
@@ -22,8 +24,16 @@ a {
 }
 
 
+/* ----- TEXT COMPONENTS ----- */
+
 h1, h2, h3 {
     font-family: Merriweather;
+    font-weight: 700;
+}
+
+.link {
+    color: #F78065;
+    font-size: 1.125rem;
     font-weight: 700;
 }
 
@@ -106,29 +116,73 @@ h1, h2, h3 {
     margin-bottom: 1.5rem;
 }
 
-.services__card__link {
-    display: inline;
-
-    color: #F78065;
-    font-weight: 700;
-
-    font-size: 1.125rem;
-}
-.services__card__link:hover {
-    text-decoration: underline;
-}
-
 
 
 /* ----- FACILITIES ----- */
+
+.facilities {
+    max-width: 77.5rem;
+
+    margin: 0 auto;
+    margin-bottom: 16.4375rem;
+}
+
+.facilities__card {
+    position: relative;
+
+    padding-bottom: 2.5rem;
+}
+
+.facilities__headline {
+    font-size: 2.25rem;
+
+    margin-bottom: 6.75rem;
+}
+
+.facilities__grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 2.875rem;
+}
+
+.facilities__card__img {
+    margin-bottom: 4rem;
+}
+
+.facilities__card__headline {
+    font-size: 1.375rem;
+
+    margin-bottom: 2rem;
+}
+
+.facilities__card__txt {
+    font-size: 0.875rem;
+}
+
+.facilities__card__link {
+    position: absolute;
+    bottom: 0;
+}
 
 
 
 /* ----- SITES ----- */
 
+.sites {
+    max-width: 77.5rem;
+
+    margin: 0 auto;
+}
+
 
 
 /* ----- ADVANTAGES ----- */
+
+.advantages {
+    max-width: 77.5rem;
+
+    margin: 0 auto;
+}
 
 
 
