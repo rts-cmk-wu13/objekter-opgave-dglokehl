@@ -30,10 +30,10 @@ services.forEach(card => {
     servicesCard.classList.add("services__card");
 
     let servicesCardImg = document.createElement("img");
-    servicesCardImg.classList.add("services__card__headline");
-    servicesCardImg.setAttribute("src", card.illustration)
+    servicesCardImg.classList.add("services__card__img");
+    servicesCardImg.setAttribute("src", card.illustration);
 
-    let servicesCardHeadline = document.createElement("h2");
+    let servicesCardHeadline = document.createElement("h3");
     servicesCardHeadline.classList.add("services__card__headline");
     servicesCardHeadline.textContent = card.headline;
 
@@ -52,6 +52,34 @@ services.forEach(card => {
 
 
 // ----- FACILITIES ----- //
+
+let facilitiesHeadline = document.createElement("h2");
+facilitiesHeadline.textContent = facilities.headline;
+
+let facilitiesGrid = document.createElement("div");
+facilitiesGrid.classList.add("facilities__grid");
+
+facilities.options.forEach(card => {
+    let facilitiesCard = document.createElement("article");
+    facilitiesCard.classList.add("facilities__card");
+
+    let facilitiesImg = document.createElement("img");
+    facilitiesImg.classList.add("facilities__card__img");
+    facilitiesImg.setAttribute("src", card.icon);
+
+    let facilitiesHeadline = document.createElement("h3");
+    facilitiesHeadline.classList.add("facilities__card__headline");
+    facilitiesHeadline.textContent = card.headline;
+
+    let facilitiesTxt = document.createElement("p");
+    facilitiesTxt.classList.add("facilities__card__txt");
+    facilitiesTxt.textContent = card.text;
+
+    facilitiesCard.append(facilitiesImg, facilitiesHeadline, facilitiesTxt);
+    facilitiesGrid.append(facilitiesCard);
+});
+
+facilitiesSection.append(facilitiesHeadline, facilitiesGrid);
 
 
 // ----- SITES ----- //
