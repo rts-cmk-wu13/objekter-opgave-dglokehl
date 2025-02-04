@@ -15,7 +15,7 @@ heroImg.setAttribute("src", hero.image);
 heroImg.classList.add("hero__img");
 
 let heroTxtContainer = document.createElement("div");
-heroTxtContainer.classList.add("hero__textbox")
+heroTxtContainer.classList.add("hero__textbox");
 
 let heroHeadline = document.createElement("h1");
 heroHeadline.classList.add("hero__headline");
@@ -25,8 +25,9 @@ let heroTxt = document.createElement("p");
 heroTxt.classList.add("hero__txt");
 heroTxt.textContent = hero.copy;
 
-let heroBtn = document.createElement("button");
-heroBtn.classList.add("hero__button");
+let heroBtn = document.createElement("a");
+heroBtn.classList.add("hero__btn");
+heroBtn.setAttribute("href", "")
 heroBtn.textContent = "Explore";
 
 heroTxtContainer.append(heroHeadline, heroTxt, heroBtn);
@@ -54,7 +55,7 @@ services.forEach(card => {
 
     let servicesCardLink = document.createElement("a");
     servicesCardLink.classList.add("services__card__link", "link");
-    servicesCardLink.setAttribute("href", "")
+    servicesCardLink.setAttribute("href", "");
     servicesCardLink.textContent = card.linktext;
 
     servicesCard.append(servicesCardImg, servicesCardHeadline, servicesCardTxt, servicesCardLink);
@@ -89,7 +90,7 @@ facilities.options.forEach(card => {
     facilitiesCardTxt.textContent = card.text;
 
     let facilitiesCardLink = document.createElement("a");
-    facilitiesCardLink.setAttribute("href", "")
+    facilitiesCardLink.setAttribute("href", "");
     facilitiesCardLink.classList.add("facilities__card__link", "link");
     facilitiesCardLink.textContent = "Show me more";
 
@@ -103,11 +104,23 @@ facilitiesSection.append(facilitiesHeadline, facilitiesGrid);
 
 // ----- SITES ----- //
 
+let sitesTxtContainer = document.createElement("div");
+sitesTxtContainer.classList.add("sites__textbox");
+
 let sitesHeadline = document.createElement("h2");
+sitesHeadline.classList.add("sites__headline");
 sitesHeadline.textContent = sites.headline;
 
 let sitesTxt = document.createElement("p");
+sitesTxt.classList.add("sites__txt");
 sitesTxt.textContent = sites.text;
+
+let sitesBtn = document.createElement("a");
+sitesBtn.classList.add("sites__btn");
+sitesBtn.setAttribute("href", "");
+sitesBtn.textContent = "Start";
+
+sitesTxtContainer.append(sitesHeadline, sitesTxt, sitesBtn);
 
 let sitesGrid = document.createElement("div");
 sitesGrid.classList.add("sites__grid");
@@ -128,11 +141,16 @@ sites.places.forEach(card => {
     sitesCardTxt.classList.add("sites__card__txt");
     sitesCardTxt.textContent = card.city;
 
-    sitesCard.append(sitesCardImg, sitesCardHeadline, sitesCardTxt);
+    let sitesCardLink = document.createElement("a");
+    sitesCardLink.classList.add("sites__card__link", "link");
+    sitesCardLink.setAttribute("href", "");
+    sitesCardLink.textContent = "View the Site";
+
+    sitesCard.append(sitesCardImg, sitesCardHeadline, sitesCardTxt, sitesCardLink);
     sitesGrid.append(sitesCard);
 });
 
-sitesSection.append(sitesHeadline, sitesTxt, sitesGrid);
+sitesSection.append(sitesTxtContainer, sitesGrid);
 
 
 

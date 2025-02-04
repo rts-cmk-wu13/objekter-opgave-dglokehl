@@ -75,12 +75,12 @@ h1, h2, h3 {
     margin-top: 2rem;
 }
 
-.hero__button {
-    border: 0;
+.hero__btn {
+    display: inline-block;
+
     background-color: #F78065;
 
     color: #fff;
-    font-family: Montserrat;
     font-size: 1.125rem;
     font-weight: 700;
 
@@ -170,8 +170,75 @@ h1, h2, h3 {
 
 .sites {
     max-width: 77.5rem;
+    display: grid;
+    /* grid-template-columns: repeat(3, 1fr); */
 
     margin: 0 auto;
+    margin-bottom: 14.5rem;
+}
+
+.sites__textbox {
+    grid-column: 1/2;
+
+    max-width: 20.3125rem;
+
+    margin-right: 7.9375rem;
+}
+
+.sites__headline {
+    font-size: 2.25rem;
+
+    margin-bottom: 2rem;
+}
+
+.sites__txt {
+    font-size: 1.125rem;
+}
+
+.sites__btn {
+    display: inline-block;
+
+    background-color: #F78065;
+
+    color: #fff;
+    font-size: 1.125rem;
+    font-weight: 700;
+
+    padding: 1.25rem 5.5rem;
+    margin-top: 3rem;
+}
+
+.sites__grid {
+    grid-column: 2/4;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 3.0625rem;
+}
+
+.sites__card {
+    max-width: 14.375rem;
+}
+
+.sites__card__img {
+    display: block;
+    width: 100%;
+    height: 75%;
+    object-fit: cover;
+}
+
+.sites__card__headline {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+}
+
+.sites__card__txt {
+    color: #3F3D56;
+    font-size: 0.875rem;
+    margin: 0.5rem 0 0.7rem;
+}
+
+.sites__card__link {
+    font-weight: 500;
 }
 
 
