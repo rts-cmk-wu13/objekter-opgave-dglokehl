@@ -100,6 +100,84 @@ let advantages = [
 let footer = {
     text: "Easy Camper",
     headline: "When Passion Meets Comfort.",
+    list1:
+    `
+        <ul class="footer__list">
+            <li class="footer__list__item">
+                Discover the Network
+            </li>
+            <li class="footer__list__item">
+                <a href="" class="footer__list__link">Where to shop</a>
+            </li>
+            <li class="footer__list__item">
+                <a href="" class="footer__list__link">Tour Guided</a>
+            </li>
+            <li class="footer__list__item">
+                <a href="" class="footer__list__link">Our Tours</a>
+            </li>
+            <li class="footer__list__item">
+                <a href="" class="footer__list__link">About Us</a>
+            </li>
+        </ul>
+    `,
+    list2:
+    `
+        <ul class="footer__list">
+            <li class="footer__list__item">
+                Become a Manager
+            </li>
+            <li class="footer__list__item">
+                <a href="" class="footer__list__link">Join your Pairing</a>
+            </li>
+            <li class="footer__list__item">
+                <a href="" class="footer__list__link">Offer your Service</a>
+            </li>
+            <li class="footer__list__item">
+                <a href="" class="footer__list__link">Are you a guide?</a>
+            </li>
+        </ul>
+    `,
+    list3:
+    `
+        <ul class="footer__list">
+            <li class="footer__list__item">
+                Assistance
+            </li>
+            <li class="footer__list__item">
+                <a href="" class="footer__list__link">Support Center</a>
+            </li>
+            <li class="footer__list__item">
+                <a href="" class="footer__list__link">FAQs</a>
+            </li>
+            <li class="footer__list__item">
+                <a href="" class="footer__list__link">Cancallation Options</a>
+            </li>
+            <li class="footer__list__item">
+                <a href="" class="footer__list__link">Reliablity and Sequrity</a>
+            </li>
+        </ul>
+    `,
+    address:
+    `
+        <small class="footer__address__copyright">EazyCamper. All rights reserved.</small>
+        <ul class="footer__address__list">
+            <li class="footer__address__list__item">
+                <a href="" class="footer__address__list__link">About</a>
+            </li>
+            <li class="footer__address__list__item">
+                <a href="" class="footer__address__list__link">Site Map</a>
+            </li>
+            <li class="footer__address__list__item">
+                <a href="" class="footer__address__list__link">Terms</a>
+            </li>
+            <li class="footer__address__list__item">
+                <a href="" class="footer__address__list__link">Privacy Policy</a>
+            </li>
+            <li class="footer__address__list__item">
+                <a href="" class="footer__address__list__link">Teams</a>
+            </li>
+        </ul>
+    `
 }
 
 // let footer = {
