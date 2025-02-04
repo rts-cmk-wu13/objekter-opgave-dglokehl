@@ -157,6 +157,7 @@ sitesSection.append(sitesTxtContainer, sitesGrid);
 // ----- ADVANTAGES ----- //
 
 let advantagesHeadline = document.createElement("h2");
+advantagesHeadline.classList.add("advantages__headline");
 advantagesHeadline.textContent = "Our Advantages";
 
 let advantagesGrid = document.createElement("div");
