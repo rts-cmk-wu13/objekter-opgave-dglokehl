@@ -55,7 +55,7 @@ services.forEach(card => {
     servicesCardHeadline.textContent = card.headline;
 
     let servicesCardTxt = document.createElement("p");
-    servicesCardTxt.classList.add("services__card__txt");
+    servicesCardTxt.classList.add("services__card__txt", "grey");
     servicesCardTxt.textContent = card.text;
 
     let servicesCardLink = document.createElement("a");
@@ -92,7 +92,7 @@ facilities.options.forEach(card => {
     facilitiesCardHeadline.textContent = card.headline;
 
     let facilitiesCardTxt = document.createElement("p");
-    facilitiesCardTxt.classList.add("facilities__card__txt");
+    facilitiesCardTxt.classList.add("facilities__card__txt", "grey");
     facilitiesCardTxt.textContent = card.text;
 
     let facilitiesCardLink = document.createElement("a");
@@ -118,7 +118,7 @@ sitesHeadline.classList.add("sites__headline");
 sitesHeadline.textContent = sites.headline;
 
 let sitesTxt = document.createElement("p");
-sitesTxt.classList.add("sites__txt");
+sitesTxt.classList.add("sites__txt", "grey");
 sitesTxt.textContent = sites.text;
 
 let sitesBtn = document.createElement("a");
@@ -184,7 +184,7 @@ advantages.forEach(card => {
     advantagesCardHeadline.textContent = card.headline;
 
     let advantagesCardTxt = document.createElement("p");
-    advantagesCardTxt.classList.add("advantages__card__txt");
+    advantagesCardTxt.classList.add("advantages__card__txt", "grey");
     advantagesCardTxt.textContent = card.text;
 
     advantagesCard.append(advantagesCardImg, advantagesCardHeadline, advantagesCardTxt);
