@@ -27,7 +27,7 @@ heroTxt.textContent = hero.copy;
 
 let heroBtn = document.createElement("a");
 heroBtn.classList.add("hero__btn");
-heroBtn.setAttribute("href", "")
+heroBtn.setAttribute("href", "");
 heroBtn.textContent = "Explore";
 
 heroTxtContainer.append(heroHeadline, heroTxt, heroBtn);
@@ -188,3 +188,94 @@ advantagesSection.append(advantagesHeadline, advantagesGrid);
 
 
 // ----- FOOTER ----- //
+
+let footerTxtContainer = document.createElement("div");
+footerTxtContainer.classList.add("footer__textbox");
+
+let footerTxt = document.createElement("p");
+footerTxt.classList.add("footer__txt");
+footerTxt.textContent = footer.text;
+
+let footerHeadline = document.createElement("h2");
+footerHeadline.classList.add("footer__headline");
+footerHeadline.textContent = footer.headline;
+
+footerTxtContainer.append(footerTxt, footerHeadline);
+
+let footerListContainer = document.createElement("div");
+footerListContainer.classList.add("footer__list__container");
+footerListContainer.innerHTML = `
+    <ul class="footer__list">
+        <li class="footer__list__item">
+            Discover the Network
+        </li>
+        <li class="footer__list__item">
+            <a href="" class="footer__list__link">Where to shop</a>
+        </li>
+        <li class="footer__list__item">
+            <a href="" class="footer__list__link">Tour Guided</a>
+        </li>
+        <li class="footer__list__item">
+            <a href="" class="footer__list__link">Our Tours</a>
+        </li>
+        <li class="footer__list__item">
+            <a href="" class="footer__list__link">About Us</a>
+        </li>
+    </ul>
+    <ul class="footer__list">
+        <li class="footer__list__item">
+            Become a Manager
+        </li>
+        <li class="footer__list__item">
+            <a href="" class="footer__list__link">Join your Pairing</a>
+        </li>
+        <li class="footer__list__item">
+            <a href="" class="footer__list__link">Offer your Service</a>
+        </li>
+        <li class="footer__list__item">
+            <a href="" class="footer__list__link">Are you a guide?</a>
+        </li>
+    </ul>
+    <ul class="footer__list">
+        <li class="footer__list__item">
+            Assistance
+        </li>
+        <li class="footer__list__item">
+            <a href="" class="footer__list__link">Support Center</a>
+        </li>
+        <li class="footer__list__item">
+            <a href="" class="footer__list__link">FAQs</a>
+        </li>
+        <li class="footer__list__item">
+            <a href="" class="footer__list__link">Cancallation Options</a>
+        </li>
+        <li class="footer__list__item">
+            <a href="" class="footer__list__link">Reliablity and Sequrity</a>
+        </li>
+    </ul>
+`;
+
+let footerAddress = document.createElement("address");
+footerAddress.classList.add("footer__address");
+footerAddress.innerHTML = `
+    <p class="footer__address__copyright">EazyCamper. All rights reserved.</p>
+    <ul class="footer__address__list">
+        <li class="footer__address__list__item">
+            <a href="" class="footer__address__list__link">About</a>
+        </li>
+        <li class="footer__address__list__item">
+            <a href="" class="footer__address__list__link">Site Map</a>
+        </li>
+        <li class="footer__address__list__item">
+            <a href="" class="footer__address__list__link">Terms</a>
+        </li>
+        <li class="footer__address__list__item">
+            <a href="" class="footer__address__list__link">Privacy Policy</a>
+        </li>
+        <li class="footer__address__list__item">
+            <a href="" class="footer__address__list__link">Teams</a>
+        </li>
+    </ul>
+`;
+
+footerSection.append(footerTxtContainer, footerListContainer, footerAddress);
