@@ -29,7 +29,7 @@ a:hover {
 }
 
 
-/* ----- TEXT COMPONENTS ----- */
+/* ----- COMPONENTS ----- */
 
 h1, h2, h3 {
     font-family: Merriweather;
@@ -40,6 +40,23 @@ h1, h2, h3 {
     color: #F78065;
     font-size: 1.125rem;
     font-weight: 700;
+}
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    column-gap: 0.5rem;
+
+    background-color: #F78065;
+
+    color: #fff;
+    font-size: 1.125rem;
+    font-weight: 700;
+
+    padding: 1.25rem;
+}
+.btn:hover {
+    opacity: 0.8;
 }
 
 
@@ -84,16 +101,6 @@ h1, h2, h3 {
 }
 
 .hero__btn {
-    display: inline-flex;
-    align-items: center;
-    column-gap: 0.5rem;
-
-    background-color: #F78065;
-
-    color: #fff;
-    font-size: 1.125rem;
-    font-weight: 700;
-
     padding: 1.25rem 4.625rem;
     margin-top: 2rem;
 }
@@ -210,16 +217,7 @@ h1, h2, h3 {
 }
 
 .sites__btn {
-    display: inline-flex;
-    align-items: center;
-    column-gap: 0.5rem;
-
-    background-color: #F78065;
-
-    color: #fff;
-    font-size: 1.125rem;
-    font-weight: 700;
-
+    column-gap: 0.25rem;
     padding: 1.25rem 5.5rem;
     margin-top: 3rem;
 }

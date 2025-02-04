@@ -29,7 +29,7 @@ heroTxt.classList.add("hero__txt");
 heroTxt.textContent = hero.copy;
 
 let heroBtn = document.createElement("a");
-heroBtn.classList.add("hero__btn");
+heroBtn.classList.add("hero__btn", "btn");
 heroBtn.setAttribute("href", "");
 heroBtn.innerHTML = `<img src="${hero.icon}" alt="Globe icon"> Explore`;
 
@@ -119,7 +119,7 @@ sitesTxt.classList.add("sites__txt");
 sitesTxt.textContent = sites.text;
 
 let sitesBtn = document.createElement("a");
-sitesBtn.classList.add("sites__btn");
+sitesBtn.classList.add("sites__btn", "btn");
 sitesBtn.setAttribute("href", "");
 sitesBtn.innerHTML = `<img src="${sites.btnicon}" alt="Start icon"> Start`;
 
