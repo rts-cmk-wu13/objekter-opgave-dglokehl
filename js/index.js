@@ -19,7 +19,7 @@ heroTxtContainer.classList.add("hero__textbox");
 
 let heroHeadline = document.createElement("h1");
 heroHeadline.classList.add("hero__headline");
-heroHeadline.textContent = hero.headline;
+heroHeadline.innerHTML = hero.headline;
 
 let heroTxt = document.createElement("p");
 heroTxt.classList.add("hero__txt");
