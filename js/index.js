@@ -19,7 +19,10 @@ heroTxtContainer.classList.add("hero__textbox");
 
 let heroHeadline = document.createElement("h1");
 heroHeadline.classList.add("hero__headline");
-heroHeadline.innerHTML = hero.headline;
+function addSpan(text, span) {
+    return text.replace(span, `<span>${span}</span>`);
+}
+heroHeadline.innerHTML = addSpan(hero.headline, "save your time");
 
 let heroTxt = document.createElement("p");
 heroTxt.classList.add("hero__txt");
@@ -28,7 +31,7 @@ heroTxt.textContent = hero.copy;
 let heroBtn = document.createElement("a");
 heroBtn.classList.add("hero__btn");
 heroBtn.setAttribute("href", "");
-heroBtn.textContent = "Explore";
+heroBtn.innerHTML = `<img src="${hero.icon}" alt="Globe icon"> Explore`;
 
 heroTxtContainer.append(heroHeadline, heroTxt, heroBtn);
 heroSection.append(heroImg, heroTxtContainer);
@@ -118,7 +121,7 @@ sitesTxt.textContent = sites.text;
 let sitesBtn = document.createElement("a");
 sitesBtn.classList.add("sites__btn");
 sitesBtn.setAttribute("href", "");
-sitesBtn.textContent = "Start";
+sitesBtn.innerHTML = `<img src="${sites.btnicon}" alt="Start icon"> Start`;
 
 sitesTxtContainer.append(sitesHeadline, sitesTxt, sitesBtn);
 
@@ -207,7 +210,7 @@ footerTxtContainer.append(footerTxt, footerHeadline);
 
 let footerListContainer = document.createElement("div");
 footerListContainer.classList.add("footer__list__container");
-footerListContainer.innerHTML = footer.list1 + footer.list2 + footer.list3
+footerListContainer.innerHTML = footer.list1 + footer.list2 + footer.list3;
 
 footerContainer.append(footerTxtContainer, footerListContainer);
 
