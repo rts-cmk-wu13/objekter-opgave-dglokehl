@@ -11,8 +11,9 @@ const footerSection = document.querySelector(".footer");
 // ----- HERO ----- //
 
 let heroImg = document.createElement("img");
-heroImg.setAttribute("src", hero.image);
 heroImg.classList.add("hero__img");
+heroImg.setAttribute("src", hero.image);
+heroImg.setAttribute("alt", "Kvinde som står i et kontor");
 
 let heroTxtContainer = document.createElement("div");
 heroTxtContainer.classList.add("hero__textbox");
@@ -47,6 +48,7 @@ services.forEach(card => {
     let servicesCardImg = document.createElement("img");
     servicesCardImg.classList.add("services__card__img");
     servicesCardImg.setAttribute("src", card.illustration);
+    servicesCardImg.setAttribute("alt", "Illustration");
 
     let servicesCardHeadline = document.createElement("h3");
     servicesCardHeadline.classList.add("services__card__headline");
@@ -83,6 +85,7 @@ facilities.options.forEach(card => {
     let facilitiesCardImg = document.createElement("img");
     facilitiesCardImg.classList.add("facilities__card__img");
     facilitiesCardImg.setAttribute("src", card.icon);
+    facilitiesCardImg.setAttribute("alt", "Small illustration");
 
     let facilitiesCardHeadline = document.createElement("h3");
     facilitiesCardHeadline.classList.add("facilities__card__headline");
@@ -135,6 +138,7 @@ sites.places.forEach(card => {
     let sitesCardImg = document.createElement("img");
     sitesCardImg.classList.add("sites__card__img");
     sitesCardImg.setAttribute("src", card.img);
+    sitesCardImg.setAttribute("alt", `Person named ${card.name}`);
 
     let sitesCardHeadline = document.createElement("h3");
     sitesCardHeadline.classList.add("sites__card__headline");
@@ -173,6 +177,7 @@ advantages.forEach(card => {
     let advantagesCardImg = document.createElement("img");
     advantagesCardImg.classList.add("advantages__card__img");
     advantagesCardImg.setAttribute("src", card.icon);
+    advantagesCardImg.setAttribute("alt", "Small illustration");
 
     let advantagesCardHeadline = document.createElement("h3");
     advantagesCardHeadline.classList.add("advantages__card__headline");
