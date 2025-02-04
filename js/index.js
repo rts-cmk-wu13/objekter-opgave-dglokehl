@@ -128,8 +128,8 @@ sitesBtn.innerHTML = `<img src="${sites.btnicon}" alt="Start icon"> Start`;
 
 sitesTxtContainer.append(sitesHeadline, sitesTxt, sitesBtn);
 
-let sitesGrid = document.createElement("div");
-sitesGrid.classList.add("sites__grid");
+let sitesCardContainer = document.createElement("div");
+sitesCardContainer.classList.add("sites__card__container");
 
 sites.places.forEach(card => {
     let sitesCard = document.createElement("article");
@@ -154,10 +154,10 @@ sites.places.forEach(card => {
     sitesCardLink.textContent = "View the Site";
 
     sitesCard.append(sitesCardImg, sitesCardHeadline, sitesCardTxt, sitesCardLink);
-    sitesGrid.append(sitesCard);
+    sitesCardContainer.append(sitesCard);
 });
 
-sitesSection.append(sitesTxtContainer, sitesGrid);
+sitesSection.append(sitesTxtContainer, sitesCardContainer);
 
 
 
