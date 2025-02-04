@@ -189,6 +189,9 @@ advantagesSection.append(advantagesHeadline, advantagesGrid);
 
 // ----- FOOTER ----- //
 
+let footerContainer = document.createElement("div");
+footerContainer.classList.add("footer__container");
+
 let footerTxtContainer = document.createElement("div");
 footerTxtContainer.classList.add("footer__textbox");
 
@@ -254,11 +257,12 @@ footerListContainer.innerHTML = `
         </li>
     </ul>
 `;
+footerContainer.append(footerTxtContainer, footerListContainer);
 
 let footerAddress = document.createElement("address");
 footerAddress.classList.add("footer__address");
 footerAddress.innerHTML = `
-    <p class="footer__address__copyright">EazyCamper. All rights reserved.</p>
+    <small class="footer__address__copyright">EazyCamper. All rights reserved.</small>
     <ul class="footer__address__list">
         <li class="footer__address__list__item">
             <a href="" class="footer__address__list__link">About</a>
@@ -278,4 +282,4 @@ footerAddress.innerHTML = `
     </ul>
 `;
 
-footerSection.append(footerTxtContainer, footerListContainer, footerAddress);
+footerSection.append(footerContainer, footerAddress);
