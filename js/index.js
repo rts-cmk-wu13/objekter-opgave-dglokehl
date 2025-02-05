@@ -213,11 +213,12 @@ footerHeadline.textContent = footer.headline;
 
 footerTxtContainer.append(footerTxt, footerHeadline);
 
-let footerListContainer = document.createElement("div");
-footerListContainer.classList.add("footer__list__container");
-footerListContainer.innerHTML = footer.list1 + footer.list2 + footer.list3;
+// let footerListContainer = document.createElement("div");
+// footerListContainer.classList.add("footer__list__container");
+// footerListContainer.innerHTML = footer.list1 + footer.list2 + footer.list3;
 
-footerContainer.append(footerTxtContainer, footerListContainer);
+footerContainer.innerHTML = footer.list1 + footer.list2 + footer.list3;
+footerContainer.prepend(footerTxtContainer);
 
 let footerAddress = document.createElement("address");
 footerAddress.classList.add("footer__address");
