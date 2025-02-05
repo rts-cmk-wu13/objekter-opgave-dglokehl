@@ -96,3 +96,125 @@ let advantages = [
 ]
 
 // Opret dit dataobjekt til footerens indhold herunder
+
+let footer = {
+    text: "Easy Camper",
+    headline: "When Passion Meets Comfort.",
+    list1:
+    `
+        <ul class="footer__list">
+            <li class="footer__list__item">
+                Discover the Network
+            </li>
+            <li class="footer__list__item">
+                <a href="" class="footer__list__link">Where to shop</a>
+            </li>
+            <li class="footer__list__item">
+                <a href="" class="footer__list__link">Tour Guided</a>
+            </li>
+            <li class="footer__list__item">
+                <a href="" class="footer__list__link">Our Tours</a>
+            </li>
+            <li class="footer__list__item">
+                <a href="" class="footer__list__link">About Us</a>
+            </li>
+        </ul>
+    `,
+    list2:
+    `
+        <ul class="footer__list">
+            <li class="footer__list__item">
+                Become a Manager
+            </li>
+            <li class="footer__list__item">
+                <a href="" class="footer__list__link">Join your Pairing</a>
+            </li>
+            <li class="footer__list__item">
+                <a href="" class="footer__list__link">Offer your Service</a>
+            </li>
+            <li class="footer__list__item">
+                <a href="" class="footer__list__link">Are you a guide?</a>
+            </li>
+        </ul>
+    `,
+    list3:
+    `
+        <ul class="footer__list">
+            <li class="footer__list__item">
+                Assistance
+            </li>
+            <li class="footer__list__item">
+                <a href="" class="footer__list__link">Support Center</a>
+            </li>
+            <li class="footer__list__item">
+                <a href="" class="footer__list__link">FAQs</a>
+            </li>
+            <li class="footer__list__item">
+                <a href="" class="footer__list__link">Cancallation Options</a>
+            </li>
+            <li class="footer__list__item">
+                <a href="" class="footer__list__link">Reliablity and Sequrity</a>
+            </li>
+        </ul>
+    `,
+    address:
+    `
+        <small class="footer__address__copyright">EazyCamper. All rights reserved.</small>
+        <ul class="footer__address__list">
+            <li class="footer__address__list__item">
+                <a href="" class="footer__address__list__link">About</a>
+            </li>
+            <li class="footer__address__list__item">
+                <a href="" class="footer__address__list__link">Site Map</a>
+            </li>
+            <li class="footer__address__list__item">
+                <a href="" class="footer__address__list__link">Terms</a>
+            </li>
+            <li class="footer__address__list__item">
+                <a href="" class="footer__address__list__link">Privacy Policy</a>
+            </li>
+            <li class="footer__address__list__item">
+                <a href="" class="footer__address__list__link">Teams</a>
+            </li>
+        </ul>
+    `
+}
+
+// let footer = {
+//     text: "Easy Camper",
+//     headline: "When Passion Meets Comfort.",
+//     lists: [
+//         {
+//             items: [
+//             {headline: "Discover the Network"},
+//             {listitem: "Where to shop"},
+//             {listitem: "Tour Guided"},
+//             {listitem: "Our Tours"},
+//             {listitem: "About Us"}
+//         ]
+//         },
+//         {
+//             headline: "Become a Manager",
+//             listitem: "Join your Pairing",
+//             listitem: "Offer your Service",
+//             listitem: "Are you a guide?"
+//         },
+//         {
+//             headline: "Assistance",
+//             listitem: "Support Center",
+//             listitem: "FAQs",
+//             listitem: "Cancallation Options",
+//             listitem: "Reliablity and Sequrity",
+//         }
+//     ],
+//     address: [
+//         {
+//             headline: "EazyCamper. All rights reserved.",
+//             listitem1: "About",
+//             listitem2: "Site Map",
+//             listitem3: "Terms",
+//             listitem4: "Privacy Policy",
+//             listitem5: "Teams",
+//         }
+//     ]
+// }
