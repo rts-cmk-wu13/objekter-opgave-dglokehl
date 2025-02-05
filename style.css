@@ -7,7 +7,7 @@
 }
 
 body {
-    font-family: Montserrat;
+    font-family: Montserrat, sans-serif;
     font-weight: 400;
 }
 
@@ -32,7 +32,7 @@ a:hover {
 /* ----- COMPONENTS ----- */
 
 h1, h2, h3 {
-    font-family: Merriweather;
+    font-family: Merriweather, serif;
     font-weight: 700;
 }
 
@@ -336,7 +336,7 @@ footer {
 }
 
 .footer__txt {
-    font-family: Merriweather;
+    font-family: Merriweather, serif;
     font-size: 1.5rem;
     font-weight: 700;
 
@@ -366,7 +366,7 @@ footer {
 }
 
 .footer__list__item:first-of-type {
-    font-family: Merriweather;
+    font-family: Merriweather, serif;
     font-size: 1.125rem;
     font-weight: 700;
 }
